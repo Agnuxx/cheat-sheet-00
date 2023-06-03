@@ -10,7 +10,9 @@ export default function Routes() {
     <Stack.Navigator>
       <Stack.Screen 
       name="Welcome" 
-      component={Welcome} />
+      component={Welcome} 
+      options={{HeaderShown: false}}
+      />
       
       <Stack.Screen 
       name="SignIn" 
