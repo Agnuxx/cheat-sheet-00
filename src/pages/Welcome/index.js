@@ -17,7 +17,7 @@ export default function Bem_Vindo(){
         <View styles={styles.containerLogo}>
             <Image
                 source={require('../../assets/logo.jpeg')}
-                style={{widht:'100%'}}
+                style={{width:'20%'}}
                 resizeMode='contain'  
             />
         </View>
