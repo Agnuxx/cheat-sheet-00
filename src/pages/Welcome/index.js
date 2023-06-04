@@ -13,8 +13,8 @@ export default function Bem_Vindo(){
     const navigation = useNavigation();
 
     return (
-        <View style={styles.container}>
-        <View style={styles.containerLogo}>
+        <View styles={styles.container}>
+        <View styles={styles.containerLogo}>
             <Image
                 source={require('../../assets/logo.jpeg')}
                 style={{widht:'100%'}}
@@ -28,7 +28,7 @@ export default function Bem_Vindo(){
             <Text style={styles.text}>Faça agora seu registro</Text>
 
             <TouchableOpacity 
-            style={style.button}
+            style={styles.button}
             onPress= {() => navigation.navigate('SignIn')}
             >
                 <Text style={styles.buttonText}>Registrar</Text>

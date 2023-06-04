@@ -3,7 +3,7 @@ import {View,Text, StyleSheet,TextInput, TouchableOpacity} from 'react-native';
 
 export default function SignIn(){
     return (
-        <View style={style.container}>
+        <View style={styles.container}>
             <Text style={styles.message}>Registro</Text>
         <Text style={styles.title}>Registra-se</Text>
         <TextInput
