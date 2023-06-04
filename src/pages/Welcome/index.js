@@ -7,7 +7,11 @@ import {
     TouchableOpacity
 } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
+
 export default function Bem_Vindo(){
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
         <View style={styles.containerLogo}>
@@ -23,7 +27,10 @@ export default function Bem_Vindo(){
             <Text style={styles.title}>Queridos programadores seja bem-vindo ao Cheat Sheat</Text>           
             <Text style={styles.text}>Faça agora seu registro</Text>
 
-            <TouchableOpacity style={style.button}>
+            <TouchableOpacity 
+            style={style.button}
+            onPress= {() => navigation.navigate('SignIn')}
+            >
                 <Text style={styles.buttonText}>Registrar</Text>
             </TouchableOpacity>
 
